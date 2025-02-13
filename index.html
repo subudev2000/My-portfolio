@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+              <meta charset="UTF-8">
+              <meta name="viewport" content="width=device-width, initial-scale=1.0">
+              <title>Personal Portfolio Website</title>
+              <link rel="stylesheet" href="styles.css">
+              <script src="https://kit.fontawesome.com/2aab285c45.js" crossorigin="anonymous"></script>
+              <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+
+</head>
+<body>
+         <div id="header">
+            <div id="particles-js"></div>
+             <div class="container">
+                  <nav>
+                     <a href="#" class="logo-text">SUBHASHREE.</a>
+                            <ul id="sidemenu">
+                                          <li><a href="#header">Home</a></li>
+                                          <li><a href="#about">About</a></li>
+                                          <li><a href="#services">Services</a></li>
+                                          <li><a href="#portfolio">Portfolio</a></li>
+                                          <li><a href="#contact">Contact</a></li>
+                                          <i class="fa-regular fa-circle-xmark" onclick="closemenu()"></i>
+                            </ul>
+                            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                  </nav>
+                  <div class="header-text">
+                            <p>Web Developer</p>
+                            <h1>Hi, I'm <span><br>Subhashree Behera</span></h1>
+                  </div>
+             </div>
+         </div>  
+         <div id="about" class="reveal">
+              <div class="container">
+                            <div class="row">
+                                       <div class="about-col-1">
+                                          <img src="images/user-prof.png" alt="">
+                                       </div>
+                                       <div class="about-col-2">
+                                          <h1 class="sub-title">About Me</h1>
+                                          <p>As a Computer Science graduate with a strong academic background, I am deeply passionate about web
+                                             development. I specialize in building responsive, user-friendly websites that offer smooth, engaging
+                                             experiences. With a solid foundation in both front-end and back-end technologies, I focus on creating scalable,
+                                             efficient solutions. I am eager to use my skills in impactful projects and continue growing in the tech industry.
+                                          </p>
+                                          <div class="tab-titles">
+                                                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                                                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                                                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                                          </div>
+                                          <div class="tab-contents active-tab" id="skills">
+                                                        <ul>
+                                                                      <li><span>Languages</span><br>Python, JavaScript, HTML, CSS, SQL, MongoDB</li>
+                                                                      <li><span>Frameworks</span><br>React.js, Node.js, Express.js, Tailwind CSS</li>
+                                                                      <li><span>Tools</span><br>Git, GitHub, Visual Studio Code</li>
+                                                                      <li><span>No Code Tools</span><br>WebFlow</li>
+                                                                      <li><span>Others</span><br>Technical Writing, UI/UX, Proficiency in English, Content Writing</li>
+                                                        </ul>           
+                                          </div> 
+                                          <div class="tab-contents" id="experience">
+                                                        <ul>
+                                                                      <li><span>2024 December - Current</span><br>SDE - Intern (Remote)</li>
+                                                                      <li><span>2024 August - 2024 December</span><br>Front-end Developer Intern (Noida, Uttar Pradesh)</li>
+                                                                      
+                                                        </ul>           
+                                          </div>
+                                          <div class="tab-contents" id="education">
+                                                        <ul>
+                                                                      <li><span>2024</span><br>B.Tech in CSE from Silicon Institute of Technology, Odisha</li>
+                                                                      <li><span>2020</span><br>12th from Deepika English Medium School, Odisha</li>
+                                                                      <li><span>2017</span><br>10th from Deepika English Medium School, Odisha</li>
+                                                        </ul>           
+                                          </div>
+                                       </div>   
+                            </div>
+              </div>
+         </div>
+<!--------------------------------services---------------------------------------------------->
+         <div id="services" class="reveal">
+            <div class="container">
+               <h1 class="sub-title">Areas of Expertise</h1>
+               <div class="services-list">
+                  <div>
+                     <i class="fa-solid fa-code"></i>
+                     <h2>Web Development</h2>
+                     <p>Building responsive, user-friendly websites with seamless functionality and modern design to enhance user experience and engagement.</p>
+                  </div>
+                  <div>
+                     <i class="fa-solid fa-crop"></i>
+                     <h2>Front-End Development</h2>
+                     <p>Crafting visually appealing, responsive, and interactive user interfaces with seamless navigation for an engaging digital experience.</p>
+                  </div>
+                  <div>
+                     <i class="fa-brands fa-app-store"></i>
+                     <h2>No Code Development</h2>
+                     <p>Creating custom, scalable, and visually stunning web solutions—built efficiently without coding, ensuring seamless functionality and rapid deployment. </p>
+                  </div>
+               </div>
+            </div>
+         </div>
+<!------------------------------portfolio------------------------------->
+         <div id="portfolio" class="reveal">
+              <div class="container">
+                     <h1 class="sub-title">My Work</h1>
+                     <div class="work-list">
+                         <div class="work">
+                           <img src="images/work1.png">
+                           <div class="layer">
+                              <h3>List & Image Management System</h3>
+                              <p>Built a List and Image Management System 
+                                 using Node.js and Express.js, designed to 
+                                 dynamically filter and display images based 
+                                 on HTTP response codes. When a specific status 
+                                 code is selected, all related images are retrieved 
+                                 and displayed. The system also allows users to 
+                                 save and manage filtered lists, providing an 
+                                 interactive and efficient way to explore HTTP 
+                                 status codes visually</p>
+                                 <a href="https://moengage-subu.onrender.com/login" target="_blank" aria-label="View Music App Project">
+                                    <i class="fa-solid fa-up-right-from-square"></i>
+                                </a>
+                           </div>
+                         </div>
+                         <div class="work">
+                           <img src="images/work2.png">
+                           <div class="layer">
+                              <h3>Responsive Landing Page</h3>
+                              <p>Built an interactive web page based on a 
+                                 financial services company using HTML, CSS, 
+                                 and JavaScript to create a seamless and engaging user 
+                                 experience. The page includes real-time financial 
+                                 updates, service offerings, customer testimonials, 
+                                 and interactive UI elements. With a responsive design, 
+                                 smooth animations, and dynamic content updates</p>
+                                 <a href="https://subudev2000.github.io/Bright-Money/" target="_blank" aria-label="View Social Media App Project">
+                                    <i class="fa-solid fa-up-right-from-square"></i>
+                                </a>
+                           </div>
+                         </div>
+                         <div class="work">
+                           <img src="images/work3.png">
+                           <div class="layer">
+                              <h3>Restaurant Admin Panel</h3>
+                              <p>Developed a Restaurant Admin Panel using React to streamline
+                                  restaurant management. The panel features menu and inventory management, 
+                                  order tracking, role-based access control, and sales analytics. 
+                                  With a responsive UI and intuitive navigation, it allows admins
+                                 to efficiently update menus, manage orders, assign roles, 
+                                 and track business performance in real time. </p>
+                                 <a href="https://github.com/your-username/social-media-app" target="_blank" aria-label="View Social Media App Project">
+                                    <i class="fa-solid fa-up-right-from-square"></i>
+                                </a>
+                           </div>
+                         </div>
+                     </div>
+                     <a href="#" class="btn">See more</a>
+              </div>
+         </div>
+<!-------------------------contact------------------------------->
+         <div id="contact" class="reveal">
+            <div class="container">
+                  <div class="row">
+                     <div class="contact-left">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <p class="contact-info">
+                           <i class="fa-solid fa-paper-plane"></i>
+                           <a href="mailto:contact@example.com">subhashree.sb08@gmail.com</a>
+                        </p>
+                        <p class="contact-info">
+                        <i class="fa-solid fa-phone"></i>
+                        <a href="tel:0123456789">6371644924</a>
+                        </p>
+                        <div class="social-icons">
+                           <a href="https://facebook.com/your.profile" target="_blank" aria-label="Facebook Profile">
+                              <i class="fa-brands fa-facebook"></i>
+                          </a>
+                          <a href="https://twitter.com/your.profile" target="_blank" aria-label="Twitter Profile">
+                              <i class="fa-brands fa-square-twitter"></i>
+                          </a>
+                          <a href="https://instagram.com/your.profile" target="_blank" aria-label="Instagram Profile">
+                              <i class="fa-brands fa-square-instagram"></i>
+                          </a>
+                          <a href="https://www.linkedin.com/in/subhashree0804/" target="_blank" aria-label="LinkedIn Profile">
+                              <i class="fa-brands fa-linkedin"></i>
+                          </a>
+                        </div>
+                        <a href="images/Subhashree_Resume_2025.pdf" download class="btn btn2">Download CV</a>
+                     </div>
+                     <div class="contact-right">
+                     <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your name" required>
+                        <input type="email" name="Email" placeholder="Your email" required>
+                        <textarea name="Message" rows="6" placeholder="Your message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                     </form>
+                     <span id="msg"></span>
+                     </div>
+                  </div>
+            </div>
+            <div class="copyright">
+                  <p>Copyright @ Subhashree | All rights reserved </p>
+            </div>
+         </div>
+
+         <script>
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+            
+            function opentab(tabname){
+               for(tablink of tablinks){
+                  tablink.classList.remove("active-link");
+               }
+               for(tabcontent of tabcontents){
+                  tabcontent.classList.remove("active-tab");
+               }
+               event.currentTarget.classList.add("active-link");
+               document.getElementById(tabname).classList.add("active-tab");
+            }
+         </script>
+
+         <script>
+            var sidemeu = document.getElementById("sidemenu");
+
+            function openmenu(){
+               sidemeu.style.right = "0";
+            }
+            function closemenu(){
+               sidemeu.style.right = "-200px";
+            }
+         </script>
+         <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbwyWU_SVVzNhiAlbTgsUap17M1h5qt31zhW7f7YTvamiHJBRm8O8xNfRqpn-LZ8U0Hw/exec'
+            const form = document.forms['submit-to-google-sheet']
+            const msg = document.getElementById("msg")
+          
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => {
+                  msg.innerHTML = "Message sent successfully"
+                  setTimeout(function(){
+                     msg.innerHTML = ""
+                }, 5000)
+                form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+            })
+          </script>
+
+          <script>
+            // Scroll reveal animation
+            function reveal() {
+            var reveals = document.querySelectorAll('.reveal');
+    
+            reveals.forEach(element => {
+            var windowHeight = window.innerHeight;
+            var elementTop = element.getBoundingClientRect().top;
+            var elementVisible = 150;
+        
+            if (elementTop < windowHeight - elementVisible) {
+            element.classList.add('active');
+            }
+         });
+      }
+
+window.addEventListener('scroll', reveal);
+          </script>
+          <script>
+           
+function typeWriter(element, text, speed = 100) {
+    let i = 0;
+    element.innerHTML = '';
+    
+    function type() {
+        if (i < text.length) {
+            element.innerHTML += text.charAt(i);
+            i++;
+            setTimeout(type, speed);
+        }
+    }
+    
+    type();
+}
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    const nameElement = document.querySelector('.header-text h1 span');
+    const nameText = "Subhashree Behera";
+    
+    typeWriter(nameElement, nameText, 150);
+    
+    document.addEventListener('scroll', function() {
+        if (window.scrollY === 0) {
+            typeWriter(nameElement, nameText, 150);
+        }
+    });
+});
+          </script>
+             <script src="particles.js"></script>
+</body>
+</html>
