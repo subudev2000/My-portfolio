@@ -268,35 +268,42 @@
 window.addEventListener('scroll', reveal);
           </script>
           <script>
-           
-function typeWriter(element, text, speed = 100) {
+            function typeWriter(element, text, speed = 50) {
     let i = 0;
     element.innerHTML = '';
+    
+    // Random typing speed variation for more natural effect
+    function getRandomDelay() {
+        return Math.floor(Math.random() * 100) + speed;
+    }
     
     function type() {
         if (i < text.length) {
             element.innerHTML += text.charAt(i);
             i++;
-            setTimeout(type, speed);
+            setTimeout(type, getRandomDelay());
+        } else {
+            // Wait before starting again
+            setTimeout(() => {
+                i = 0;
+                element.innerHTML = '';
+                type();
+            }, 3000);
         }
     }
     
-    type();
+    // Add initial delay before typing starts
+    setTimeout(type, 1000);
 }
-
 
 document.addEventListener('DOMContentLoaded', function() {
     const nameElement = document.querySelector('.header-text h1 span');
     const nameText = "Subhashree Behera";
     
-    typeWriter(nameElement, nameText, 150);
-    
-    document.addEventListener('scroll', function() {
-        if (window.scrollY === 0) {
-            typeWriter(nameElement, nameText, 150);
-        }
-    });
+    typeWriter(nameElement, nameText);
 });
+           
+
           </script>
              <script src="particles.js"></script>
 </body>
